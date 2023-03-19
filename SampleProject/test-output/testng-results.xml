@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="3" ignored="0" total="8" passed="1" failed="4" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-17T23:23:33 AEDT" name="Suite" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="15958">
+  <suite started-at="2023-03-19T12:13:54 AEDT" name="Suite" finished-at="2023-03-19T12:14:15 AEDT" duration-ms="20728">
     <groups>
       <group name="smoke">
         <method signature="LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@15a04efb]" name="verifyLoginValidUserValidPassword" class="com.SampleProject.scrp.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-17T23:23:33 AEDT" name="Test" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="15958">
+    <test started-at="2023-03-19T12:13:54 AEDT" name="Test" finished-at="2023-03-19T12:14:15 AEDT" duration-ms="20728">
       <class name="com.SampleProject.scrp.LoginTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:33 AEDT" name="beforeTest" finished-at="2023-03-17T23:23:43 AEDT" duration-ms="10260" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:13:54 AEDT" name="beforeTest" finished-at="2023-03-19T12:14:02 AEDT" duration-ms="7612" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,11 +21,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:43 AEDT" name="testBase" finished-at="2023-03-17T23:23:43 AEDT" duration-ms="23" status="PASS">
+        <test-method signature="testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:02 AEDT" name="testBase" finished-at="2023-03-19T12:14:02 AEDT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBase -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:43 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:44 AEDT" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:02 AEDT" name="afterMethod" finished-at="2023-03-19T12:14:02 AEDT" duration-ms="393" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -36,630 +36,67 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method retried="true" signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:44 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="3596" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginInvalidUserInvalidPassword(LoginTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:02 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-19T12:14:07 AEDT" duration-ms="4876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:07 AEDT" name="afterMethod" finished-at="2023-03-19T12:14:07 AEDT" duration-ms="271" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SKIP method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method retried="true" signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="154" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginInvalidUserInvalidPassword(LoginTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SKIP method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method retried="true" signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="149" status="SKIP">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginInvalidUserInvalidPassword(LoginTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SKIP method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="134" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginInvalidUserInvalidPassword(LoginTest.java:39)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:48 AEDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=FAILURE method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:48 AEDT" name="verifyLoginValidUserInvalidPassword" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="425" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginValidUserInvalidPassword(LoginTest.java:51)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:07 AEDT" name="verifyLoginValidUserInvalidPassword" finished-at="2023-03-19T12:14:10 AEDT" duration-ms="2682" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:49 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:10 AEDT" name="afterMethod" finished-at="2023-03-19T12:14:10 AEDT" duration-ms="184" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginValidUserInvalidPassword status=FAILURE method=LoginTest.verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginValidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:49 AEDT" name="verifyLoginInvalidUserValidPassword" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="139" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginInvalidUserValidPassword(LoginTest.java:62)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:10 AEDT" name="verifyLoginInvalidUserValidPassword" finished-at="2023-03-19T12:14:12 AEDT" duration-ms="1872" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginInvalidUserValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:49 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:12 AEDT" name="afterMethod" finished-at="2023-03-19T12:14:12 AEDT" duration-ms="261" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserValidPassword status=FAILURE method=LoginTest.verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:49 AEDT" name="verifyLoginValidUserValidPassword" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="137" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=111.0.1661.44)
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:1091:99a9:941a:3ce5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f1c2939d14aa97d21bac9d72ff6dad03, findElement {using=xpath, value=//input[@name='userName']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 111.0.1661.44, ms:edgeOptions: {debuggerAddress: localhost:62817}, msedge: {msedgedriverVersion: 111.0.1661.44 (fc2a57ec5a41..., userDataDir: /var/folders/7w/0ct_3kb12kn...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:62817/devtoo..., se:cdpVersion: 111.0.1661.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f1c2939d14aa97d21bac9d72ff6dad03
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at com.SampleProject.Pages.LoginPage.setUsername(LoginPage.java:24)
-at com.SampleProject.scrp.LoginTest.verifyLoginValidUserValidPassword(LoginTest.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:12 AEDT" name="verifyLoginValidUserValidPassword" finished-at="2023-03-19T12:14:15 AEDT" duration-ms="2374" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:49 AEDT" name="afterMethod" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:15 AEDT" name="afterMethod" finished-at="2023-03-19T12:14:15 AEDT" duration-ms="128" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=FAILURE method=LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
+                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@15a04efb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-17T23:23:49 AEDT" name="afterTest" finished-at="2023-03-17T23:23:49 AEDT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.scrp.LoginTest@15a04efb]" started-at="2023-03-19T12:14:15 AEDT" name="afterTest" finished-at="2023-03-19T12:14:15 AEDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

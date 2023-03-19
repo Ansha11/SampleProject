@@ -95,7 +95,7 @@ public static void testBase() {
 	  driver.manage().window().maximize();
 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	  String baseurl=prop.getProperty("url");
-	  driver.get("https://demo.guru99.com/test/newtours/");
+	  driver.get(baseurl);
   }
   
   
