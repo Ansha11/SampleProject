@@ -28,7 +28,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -40,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>19 Mar 2023, 12:15:55</span>
+				<span class='suite-start-time'>20 Mar 2023, 18:20:22</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -127,14 +128,14 @@
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>testBase</span>
-						<span class='test-time'>19 Mar 2023, 12:16:05</span>
+						<span class='test-time'>20 Mar 2023, 18:21:00</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>19 Mar 2023, 12:16:05</span>
-	<span class='label end-time'>19 Mar 2023, 12:16:18</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 12s+168ms</span>
+	<span class='label start-time'>20 Mar 2023, 18:21:00</span>
+	<span class='label end-time'>20 Mar 2023, 18:21:08</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+499ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -148,7 +149,7 @@
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:16:05</td>
+					<td class='timestamp'>18:21:00</td>
 					<td class='step-details'>Test passed</td>
 				</tr>
 			</tbody>
@@ -158,17 +159,17 @@
 				</li>
 				
 				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
+				<li class='test displayed active  skip' status='skip' bdd='false' test-id='2'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyLoginInvalidUserInvalidPassword</span>
-						<span class='test-time'>19 Mar 2023, 12:16:06</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>testBase</span>
+						<span class='test-time'>20 Mar 2023, 18:21:07</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>19 Mar 2023, 12:16:06</span>
-	<span class='label end-time'>19 Mar 2023, 12:16:18</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 11s+695ms</span>
+	<span class='label start-time'>20 Mar 2023, 18:21:07</span>
+	<span class='label end-time'>20 Mar 2023, 18:21:08</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+410ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -180,117 +181,80 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:16:10</td>
-					<td class='step-details'>Login failed with invalid credential</td>
-				</tr>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:16:10</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLoginValidUserInvalidPassword</span>
-						<span class='test-time'>19 Mar 2023, 12:16:10</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>19 Mar 2023, 12:16:10</span>
-	<span class='label end-time'>19 Mar 2023, 12:16:18</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 7s+196ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:16:12</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLoginInvalidUserValidPassword</span>
-						<span class='test-time'>19 Mar 2023, 12:16:13</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>19 Mar 2023, 12:16:13</span>
-	<span class='label end-time'>19 Mar 2023, 12:16:18</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+942ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:16:15</td>
-					<td class='step-details'>Test passed</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-					</div>
-				</li>
-				
-				
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLoginValidUserValidPassword</span>
-						<span class='test-time'>19 Mar 2023, 12:16:15</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>19 Mar 2023, 12:16:15</span>
-	<span class='label end-time'>19 Mar 2023, 12:16:18</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+339ms</span>
-</div>
-	<div class='test-steps'>
-		<table class='bordered table-results'>
-			<thead>
-				<tr>
-					<th>Status</th>
-					<th>Timestamp</th>
-					<th>Details</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>12:16:17</td>
-					<td class='step-details'>Test passed</td>
+				<tr class='log' status='skip'>
+					<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+					<td class='timestamp'>18:21:07</td>
+					<td class='step-details'>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:58)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:49)
+	at com.SampleProject.Base.TestBase.beforeTest(TestBase.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
+Driver info: driver.version: SafariDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	... 30 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 32 more
+Caused by: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:75)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
+	at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:116)
+	at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:73)
+	... 5 more
+Caused by: java.net.SocketException: Invalid argument
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:111)
+	... 6 more</td>
 				</tr>
 			</tbody>
 		</table>
@@ -330,10 +294,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>5</span> test(s) passed</span>
+					<span><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>0</span> test(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>0</span> test(s) failed, <span class='strong'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -345,10 +309,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>6</span> step(s) passed</span>
+					<span><span class='strong'>1</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong'>0</span> step(s) failed, <span class='strong'>0</span> others
+					<span class='strong'>0</span> step(s) failed, <span class='strong'>1</span> others
 				</div>
 			</div>
 		</div>
@@ -356,7 +320,139 @@
 	</div>
 </div>
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Exceptions</h5>
+			<ul id='exception-collection' class='exception-collection'>
+				
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.SessionNotCreatedException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>	
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>20 Mar 2023, 18:21:07</td>
+										<td class='linked' test-id='2'>testBase</td>
+										<td><pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:58)
+	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:49)
+	at com.SampleProject.Base.TestBase.beforeTest(TestBase.java:92)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
+Driver info: driver.version: SafariDriver
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	... 30 more
+Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
+Driver info: driver.version: unknown
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
+	... 32 more
+Caused by: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:75)
+	at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
+	at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:116)
+	at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:73)
+	... 5 more
+Caused by: java.net.SocketException: Invalid argument
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:111)
+	... 6 more
+</pre></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -364,31 +460,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>5</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>6</div>
+					<div class='panel-lead'>2</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>19 Mar 2023, 12:15:55</div>
+					<div class='panel-lead'>20 Mar 2023, 18:20:22</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>19 Mar 2023, 12:16:18</div>
+			 		<div class='panel-lead'>20 Mar 2023, 18:21:08</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>22,379ms</div>
+					<div class='panel-lead'>45,445ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -428,20 +524,20 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 5,
+				passParent: 1,
 				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
+				skipParent: 1,
 				unknownParent: 0,
 				
-				passChild: 6,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 1,
 				unknownChild: 0,
 				infoChild: 0,
 				

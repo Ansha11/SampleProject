@@ -10,6 +10,10 @@
       <class name="com.SampleProject.Base.TestBase"/>
     </classes>
   </test> 
-
-  <!-- Test -->
-</suite> <!-- Suite -->
+<test thread-count="5" name="Test2">
+	  <parameter name="browser" value="safari"></parameter>
+    <classes>
+      <class name="com.SampleProject.Base.TestBase"/>
+    </classes>
+  </test> 
+</suite>
