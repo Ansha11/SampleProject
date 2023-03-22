@@ -10,7 +10,7 @@
       <class name="com.SampleProject.Base.TestBase"/>
     </classes>
   </test> 
-<test thread-count="5" name="Test22">
+<test thread-count="5" name="Test2">
 	  <parameter name="browser" value="safari"></parameter>
     <classes>
       <class name="com.SampleProject.Base.TestBase"/>

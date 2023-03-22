@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-20T18:20:25 AEDT" name="Suite" finished-at="2023-03-20T18:21:07 AEDT" duration-ms="41978">
+  <suite started-at="2023-03-22T13:55:51 AEDT" name="Suite" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="22577">
     <groups>
+      <group name="smoke">
+        <method signature="LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@14f232c4]" name="verifyLoginValidUserValidPassword" class="com.SampleProject.scrp.LoginTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-20T18:20:25 AEDT" name="Test1" finished-at="2023-03-20T18:21:02 AEDT" duration-ms="36335">
-      <class name="com.SampleProject.Base.TestBase">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.Base.TestBase@43015c69]" started-at="2023-03-20T18:20:26 AEDT" name="beforeTest" finished-at="2023-03-20T18:21:00 AEDT" duration-ms="34419" status="PASS">
+    <test started-at="2023-03-22T13:55:51 AEDT" name="Test" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="22577">
+      <class name="com.SampleProject.scrp.LoginTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:55:51 AEDT" name="beforeTest" finished-at="2023-03-22T13:56:00 AEDT" duration-ms="8096" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,211 +21,86 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testBase()[pri:0, instance:com.SampleProject.Base.TestBase@43015c69]" started-at="2023-03-20T18:21:00 AEDT" name="testBase" finished-at="2023-03-20T18:21:00 AEDT" duration-ms="181" status="PASS">
+        <test-method signature="testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:00 AEDT" name="testBase" finished-at="2023-03-22T13:56:00 AEDT" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBase -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.Base.TestBase@43015c69]" started-at="2023-03-20T18:21:00 AEDT" name="afterMethod" finished-at="2023-03-20T18:21:02 AEDT" duration-ms="1185" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:00 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:00 AEDT" duration-ms="225" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testBase status=SUCCESS method=TestBase.testBase()[pri:0, instance:com.SampleProject.Base.TestBase@43015c69] output={null}]]]>
+                <![CDATA[[TestResult name=testBase status=SUCCESS method=TestBase.testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.Base.TestBase@43015c69]" started-at="2023-03-20T18:21:02 AEDT" name="afterTest" finished-at="2023-03-20T18:21:02 AEDT" duration-ms="125" status="PASS">
+        <test-method signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:00 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-22T13:56:05 AEDT" duration-ms="5575" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.SampleProject.Base.TestBase -->
-    </test> <!-- Test1 -->
-    <test started-at="2023-03-20T18:21:07 AEDT" name="Test2" finished-at="2023-03-20T18:21:07 AEDT" duration-ms="843">
-      <class name="com.SampleProject.Base.TestBase">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.Base.TestBase@895e367]" started-at="2023-03-20T18:21:07 AEDT" name="beforeTest" finished-at="2023-03-20T18:21:07 AEDT" duration-ms="642" status="FAIL">
+        </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:05 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:06 AEDT" duration-ms="406" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[safari]]>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:58)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:49)
-at com.SampleProject.Base.TestBase.beforeTest(TestBase.java:92)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: driver.version: SafariDriver
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-... 30 more
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: driver.version: unknown
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
-... 32 more
-Caused by: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: driver.version: unknown
-at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:75)
-at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:116)
-at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:73)
-... 5 more
-Caused by: java.net.SocketException: Invalid argument
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:111)
-... 6 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="testBase()[pri:0, instance:com.SampleProject.Base.TestBase@895e367]" started-at="2023-03-20T18:21:07 AEDT" name="testBase" finished-at="2023-03-20T18:21:07 AEDT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:565)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:242)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:79)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:58)
-at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:49)
-at com.SampleProject.Base.TestBase.beforeTest(TestBase.java:92)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: driver.version: SafariDriver
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:230)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:98)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-... 30 more
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: driver.version: unknown
-at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
-at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
-at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:220)
-... 32 more
-Caused by: org.openqa.selenium.WebDriverException: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-Build info: version: '4.4.0', revision: 'e5c75ed026a'
-System info: host: '192-168-1-108.tpgi.com.au', ip: 'fe80:0:0:0:45d:77d3:eb13:49cf%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.3', java.version: '17.0.5'
-Driver info: driver.version: unknown
-at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:75)
-at org.openqa.selenium.remote.service.DriverService.lambda$start$1(DriverService.java:205)
-at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1768)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: java.io.UncheckedIOException: java.net.SocketException: Invalid argument
-at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:116)
-at org.openqa.selenium.safari.SafariDriverService.waitUntilAvailable(SafariDriverService.java:73)
-... 5 more
-Caused by: java.net.SocketException: Invalid argument
-at java.base/sun.nio.ch.Net.connect0(Native Method)
-at java.base/sun.nio.ch.Net.connect(Net.java:579)
-at java.base/sun.nio.ch.Net.connect(Net.java:568)
-at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:588)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
-at java.base/java.net.Socket.connect(Socket.java:633)
-at org.openqa.selenium.net.PortProber.waitForPortUp(PortProber.java:111)
-... 6 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBase -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.Base.TestBase@895e367]" started-at="2023-03-20T18:21:07 AEDT" name="afterMethod" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1679296867898" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.Base.TestBase@895e367]" started-at="2023-03-20T18:21:07 AEDT" name="afterTest" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1679296867909" status="SKIP">
+        <test-method signature="verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:06 AEDT" name="verifyLoginValidUserInvalidPassword" finished-at="2023-03-22T13:56:09 AEDT" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginValidUserInvalidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:09 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:09 AEDT" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginValidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:09 AEDT" name="verifyLoginInvalidUserValidPassword" finished-at="2023-03-22T13:56:11 AEDT" duration-ms="2264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginInvalidUserValidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:11 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:12 AEDT" duration-ms="153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginInvalidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:12 AEDT" name="verifyLoginValidUserValidPassword" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="2094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginValidUserValidPassword -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:14 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:14 AEDT" name="afterTest" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- com.SampleProject.Base.TestBase -->
-    </test> <!-- Test2 -->
+      </class> <!-- com.SampleProject.scrp.LoginTest -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
