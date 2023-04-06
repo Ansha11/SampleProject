@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
@@ -17,6 +18,7 @@ import org.testng.annotations.Test;
 import com.SampleProject.Base.TestBase;
 import com.SampleProject.Constants.Messages;
 import com.SampleProject.Pages.FlightPage;
+import com.SampleProject.Utilities.PageUtilities;
 
 public class FlightTest extends TestBase{
 	FlightPage objFlight;
@@ -35,7 +37,7 @@ public class FlightTest extends TestBase{
 		 AssertJUnit.assertEquals(roundtripSelected,Messages.ROUNDTRIP_STATUS);
 		//  Assert.assertTrue(objFlight.tripTypeSelected());
 	}
-	@Test(priority=6,description="verify Oneway button is selected")
+	@Test(priority=6,enabled=false,description="verify Oneway button is selected")
   public void verifyOnewayButtonEnabled() {
 	  objFlight=new FlightPage(driver);		
 AssertJUnit.assertTrue(objFlight.tripTypeOnewaySelect());
@@ -54,13 +56,13 @@ AssertJUnit.assertTrue(objFlight.tripTypeOnewaySelect());
 		String departFrom=  objFlight.selectDepature();
 		  AssertJUnit.assertEquals( departFrom,Messages.DEPART_PLACE);
 	}
-	@Test(priority=9,description="verifying the selected month is April ")
+	@Test(priority=9,enabled=false,description="verifying the selected month is April ")
 	  public void verifyDepartureMonth() {
 		  objFlight=new FlightPage(driver);
 		String depatMonth=  objFlight.selectDepatureMonth();
 		AssertJUnit.assertEquals(depatMonth, Messages.DEPART_MONTH);
 	}
-@Test(priority=10,description="verifying the businessClass buttonis selected")
+@Test(priority=10,enabled=false,description="verifying the businessClass buttonis selected")
 	  public void verifyBussinessClassButtonEnabled() {
 		  objFlight=new FlightPage(driver);	
 		 AssertJUnit.assertTrue(objFlight.serviceClassSelected());

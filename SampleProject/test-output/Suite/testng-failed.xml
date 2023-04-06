@@ -4,17 +4,20 @@
   <listeners>
     <listener class-name="com.SampleProject.Listeners.TestListener"/>
   </listeners>
-  <test thread-count="5" name="Test2(failed)">
-    <parameter name="browser" value="safari"/>
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.SampleProject.Base.TestBase">
+      <class name="com.SampleProject.scrp.LoginTest">
         <methods>
+          <include name="verifyLoginInvalidUserInvalidPassword"/>
+          <include name="verifyLoginValidUserInvalidPassword"/>
+          <include name="verifyLoginValidUserValidPassword"/>
           <include name="afterTest"/>
-          <include name="testBase"/>
+          <include name="verifyLoginInvalidUserValidPassword"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.SampleProject.Base.TestBase -->
+      </class> <!-- com.SampleProject.scrp.LoginTest -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

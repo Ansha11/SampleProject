@@ -1,106 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-22T13:55:51 AEDT" name="Suite" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="22577">
+  <suite started-at="2023-04-03T21:15:22 AEST" name="Default suite" finished-at="2023-04-03T21:15:22 AEST" duration-ms="486">
     <groups>
       <group name="smoke">
-        <method signature="LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@14f232c4]" name="verifyLoginValidUserValidPassword" class="com.SampleProject.scrp.LoginTest"/>
+        <method signature="LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" name="verifyLoginValidUserValidPassword" class="com.SampleProject.scrp.LoginTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2023-03-22T13:55:51 AEDT" name="Test" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="22577">
+    <test started-at="2023-04-03T21:15:22 AEST" name="Default test" finished-at="2023-04-03T21:15:22 AEST" duration-ms="486">
       <class name="com.SampleProject.scrp.LoginTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:55:51 AEDT" name="beforeTest" finished-at="2023-03-22T13:56:00 AEDT" duration-ms="8096" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="beforeTest" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522120" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:00 AEDT" name="testBase" finished-at="2023-03-22T13:56:00 AEDT" duration-ms="9" status="PASS">
+        <test-method signature="testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="testBase" finished-at="2023-04-03T21:15:22 AEST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testBase -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:00 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:00 AEDT" duration-ms="225" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testBase status=SUCCESS method=TestBase.testBase()[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="afterMethod" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522294" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:00 AEDT" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-03-22T13:56:05 AEDT" duration-ms="5575" status="PASS">
+        <test-method signature="verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="verifyLoginInvalidUserInvalidPassword" finished-at="2023-04-03T21:15:22 AEST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginInvalidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:05 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:06 AEDT" duration-ms="406" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserInvalidPassword()[pri:1, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="afterMethod" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522370" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:06 AEDT" name="verifyLoginValidUserInvalidPassword" finished-at="2023-03-22T13:56:09 AEDT" duration-ms="3159" status="PASS">
+        <test-method signature="verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="verifyLoginValidUserInvalidPassword" finished-at="2023-04-03T21:15:22 AEST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserInvalidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:09 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:09 AEDT" duration-ms="196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginValidUserInvalidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserInvalidPassword()[pri:2, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="afterMethod" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522443" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:09 AEDT" name="verifyLoginInvalidUserValidPassword" finished-at="2023-03-22T13:56:11 AEDT" duration-ms="2264" status="PASS">
+        <test-method signature="verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="verifyLoginInvalidUserValidPassword" finished-at="2023-04-03T21:15:22 AEST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginInvalidUserValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:11 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:12 AEDT" duration-ms="153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginInvalidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginInvalidUserValidPassword()[pri:3, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="afterMethod" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522527" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:12 AEDT" name="verifyLoginValidUserValidPassword" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="2094" status="PASS">
+        <test-method signature="verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="verifyLoginValidUserValidPassword" finished-at="2023-04-03T21:15:22 AEST" duration-ms="1" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeTest on method beforeTest but has not been marked @Optional or defined
+in /private/var/folders/7w/0ct_3kb12kn4qbb6kkc7nj140000gn/T/testng-eclipse-1833372442/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginValidUserValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:14 AEDT" name="afterMethod" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="321" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginValidUserValidPassword status=SUCCESS method=LoginTest.verifyLoginValidUserValidPassword()[pri:4, instance:com.SampleProject.scrp.LoginTest@14f232c4] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="afterMethod" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522563" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.scrp.LoginTest@14f232c4]" started-at="2023-03-22T13:56:14 AEDT" name="afterTest" finished-at="2023-03-22T13:56:14 AEDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.SampleProject.scrp.LoginTest@30b6ffe0]" started-at="2023-04-03T21:15:22 AEST" name="afterTest" finished-at="1970-01-01T10:00:00 AEST" duration-ms="-1680520522576" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.SampleProject.scrp.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

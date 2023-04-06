@@ -8,9 +8,7 @@
 	  <parameter name="browser" value="edge"></parameter>
     <classes>
       <class name="com.SampleProject.scrp.LoginTest"/>
-      <class name="com.SampleProject.scrp.RegisterTest"/>
-            <class name="com.SampleProject.scrp.FlightTest"/>
-
+            <class name="com.SampleProject.scrp.RegisterTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

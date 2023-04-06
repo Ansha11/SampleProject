@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SampleProject.Utilities.PageUtilities;
+
 public class LoginPage {
 	public WebDriver driver;
 
@@ -28,8 +30,8 @@ WebElement submit;
 
 	}
 	public void clickSubmit() {
-		submit.click();
-
+		//submit.click();
+PageUtilities.clickElement(driver, submit);
 	}
 	public String getHomePageTitle() {
 		String title=driver.getTitle();

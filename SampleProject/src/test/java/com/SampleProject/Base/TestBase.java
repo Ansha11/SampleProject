@@ -15,6 +15,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.ITestResult;
@@ -25,6 +26,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.SampleProject.Constants.Messages;
+import com.SampleProject.Utilities.WaitUtilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -32,6 +34,7 @@ public class TestBase {
 	public static Properties prop=null;
 	public static WebDriver driver;
 
+	
   @Test
 public static void testBase() {
 	  prop=new Properties();
@@ -40,7 +43,6 @@ public static void testBase() {
 		prop.load(ip);
 		 } 
 		 catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();}
 		 
 		 
@@ -63,15 +65,15 @@ public static void testBase() {
 	  }*/
 	  
   }
-  @AfterMethod
+ @AfterMethod
   public void afterMethod(ITestResult r) throws Exception {  //ITestResult use to pull-then get the details
 	  if(ITestResult.SUCCESS==r.getStatus()) { 
 		  //checking the status of the @Test is same as ITestResult.SUCCESS or not
 		  File f=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		  FileUtils.copyFile(f, new File("/Users/Sanoob/Desktop/screenshot/"+r.getName()+".jpeg"));
-		  
+		 FileUtils.copyFile(f, new File("/Users/Sanoob/Desktop/screenshot/"+r.getName()+".jpeg"));
+
 	  }
-  }
+ }
 
   @BeforeTest
   @Parameters({"browser"})
@@ -80,7 +82,9 @@ public static void testBase() {
 	  testBase();
 	  if(browser1.equalsIgnoreCase("chrome")) {
 	  WebDriverManager.chromedriver().setup();
-	  driver=new ChromeDriver();
+	  ChromeOptions co=new ChromeOptions();
+		co.addArguments("--remote-allow-origins=*");
+	  driver=new ChromeDriver(co);
 	  }
 	  
 	  else if(browser1.equalsIgnoreCase("edge")) {
@@ -93,7 +97,8 @@ public static void testBase() {
 		
 		  }
 	  driver.manage().window().maximize();
-driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	  WaitUtilities.implicitWait(driver);
 	  String baseurl=prop.getProperty("url");
 	  driver.get(baseurl);
   }

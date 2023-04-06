@@ -21,10 +21,11 @@ public class RegisterTest extends TestBase{
 		  objReg=new RegisterPage(driver);
 
 		  objReg.clickRegister();
-		 String fname=ExcelUtilities.getCellStringData(0, 0,Messages.Sheet2);
+		// String fname=ExcelUtilities.getCellStringData(0, 0,Messages.Sheet2);
 		 String lname=ExcelUtilities.getCellStringData(0, 1,Messages.Sheet2);
 		 String address=ExcelUtilities.getCellStringData(1, 0, Messages.Sheet2);
-		 objReg.setfirstname(fname);
+		// objReg.setfirstname(fname);
+		 objReg.setfirstname();
 		 objReg.setlastname(lname);
 		 objReg.setAddress(address);
 	  }

@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.SampleProject.Utilities.PageUtilities;
+
 public class RegisterPage {
 	public WebDriver driver;
 
@@ -25,8 +27,9 @@ public class RegisterPage {
 	public void clickRegister() {
 		register.click();
 	}
-	public void setfirstname(String fname) {
-		firstname.sendKeys(fname);
+	public void setfirstname() {
+		//firstname.sendKeys(fname);
+		PageUtilities.sendText(driver, firstname);
 	}
 	public void setlastname(String lname) {
 		lastname.sendKeys(lname);

@@ -8,10 +8,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.SampleProject.Utilities.PageUtilities;
 import com.SampleProject.Utilities.WaitUtilities;
 
 public class FlightPage {
 	public WebDriver driver;
+	public Select selectobj;
 	@FindBy(linkText="Flights")
 	WebElement flight;
 	
@@ -50,6 +52,7 @@ public class FlightPage {
 	
 	public void clickFlightButton() {
 		flight.click();
+		PageUtilities.scrollWindow(driver,continu);
 	}
 	
 	public boolean tripTypeSelected() {
@@ -63,19 +66,22 @@ public class FlightPage {
 		return tripTypeOnewayStatus;
 	}
 	public String selectPassengerCount() {
+		Select obj=PageUtilities.selectClassDropdown(driver, passenger);
+		obj.selectByIndex(2);
+		String count=obj.getFirstSelectedOption().getText();
+		return count;
+	}
+	/*public String selectPassengerCount() {
 		Select s=new Select(passenger);
 		s.selectByIndex(1);
-	List<WebElement>data=s.getOptions();
-
-		System.out.println(data.get(1).getText());
-	return (data.get(1).getText());
-	}
+		String entries=selectobj.getFirstSelectedOption().getText();
+		return entries;
+	}*/
 	public String selectDepature() {
-		Select s=new Select(depart);
-		s.selectByIndex(2);
-		List<WebElement>data=s.getOptions();
-		System.out.println(data.get(2).getText());
-		return (data.get(2).getText());
+	Select obj=PageUtilities.selectClassDropdown(driver,depart);
+	obj.selectByIndex(4);
+	String depart=obj.getFirstSelectedOption().getText();
+	return depart;
 
 	}
 	public String selectDepatureMonth() {
